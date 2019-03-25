@@ -1,0 +1,124 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+li {
+	list-style: none;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+a {text-decoration: none;}
+img {vertical-align: bottom;}
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+html {
+	font-size: calc(6px + 1vmin);
+}
+body {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	background: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	color: #fff;
+	line-height: 1.6;
+	height: 100vh;
+}
+main {
+	width: 100%;
+	height: 100%;
+}
+header {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	background: rgba(0,0,0,.7);
+	width: 100%;
+}
+.navbar ul {
+	width: 100%;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.navbar ul li {
+	padding: 1rem;
+}
+.navbar ul li a {
+	text-transform: uppercase;
+	color: #f4f4f4;
+}
+.navbar ul li a:hover {
+	color: #777;
+}
+section {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	text-align: center;
+	width: 100%;
+	min-height: 100vh;
+	padding: 5vw;
+}
+section h1 {
+	font-size: 3rem;
+}
+section p {
+	font-size: 1.2rem;
+	padding-bottom: 1rem;
+}
+section > div {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.image {
+	min-width: 25%;
+	margin-bottom: 20px;
+}
+section img {
+	width: calc(100% - 20px);
+	border-radius: 5px;
+	margin: 0 10px;
+}
+.ya-share2 {
+	position: absolute;
+	bottom: 50px;
+}
+.share {
+	position: absolute;
+	bottom: 75px;
+}
+@media screen and (max-width: 1024px) {
+	section > div {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+	section img {
+	width: 60%;
+	margin-left: 0;
+	}
+}
