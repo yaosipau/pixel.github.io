@@ -104,6 +104,10 @@ section img {
 	border-radius: 5px;
 	margin: 0 10px;
 }
+section img:hover {
+	opacity: .7;
+	cursor: pointer;
+}
 .ya-share2 {
 	position: absolute;
 	bottom: 50px;
@@ -111,6 +115,48 @@ section img {
 .share {
 	position: absolute;
 	bottom: 75px;
+}
+.modal {
+	display: none;
+	padding-top: 4rem;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.9);
+}
+.modal-content {
+	margin: auto;
+	display: block;
+	max-width: 90%;
+	max-height: 90%;
+}
+
+.modal-content{
+	-webkit-animation-name: zoom;
+	        animation-name: zoom;
+	-webkit-animation-duration: .6s;
+	        animation-duration: .6s;
+}
+@-webkit-keyframes zoom {
+	from{-webkit-transform: scale(0);transform: scale(0)}
+	to{-webkit-transform: scale(1);transform: scale(1)}
+}
+@keyframes zoom {
+	from{-webkit-transform: scale(0);transform: scale(0)}
+	to{-webkit-transform: scale(1);transform: scale(1)}
+}
+.close {
+	position: absolute;
+	top: 2rem;
+	right: 1.5rem;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	-webkit-transition: .3s;
+	transition: .3s;
+	cursor: pointer;
 }
 @media screen and (max-width: 1024px) {
 	section > div {
