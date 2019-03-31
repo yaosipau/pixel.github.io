@@ -6,6 +6,7 @@
 	<title>Пиксель Vitebsk</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+	<script src="parallax.js"></script>
 </head>
 <body>
 	<header>
@@ -21,6 +22,22 @@
 	</header>
 	<main>
 		<section id="home">
+			<div class="para-container">
+				<ul class="scene" id="scene">
+					<li class="layer" data-depth="1">
+						<img class="imageimage" src="pic/astronaut.png">
+					</li>
+					<li class="layer" data-depth="-1">
+						<img class="imageimage" src="pic/planet1.png">
+					</li>
+					<li class="layer" data-depth="2">
+						<img class="imageimage" src="pic/planet2.png">
+					</li>
+					<li class="layer" data-depth="0.5">
+						<img class="imageimage" src="pic/rocket.png">
+					</li>
+				</ul>
+			</div>
 			<h1>Добро пожаловать в "Пиксель"</h1>
 			<div>
 				<p>Хакерспейс «Пиксель» -  первый в Витебске и один из первых хакерспейсов в Беларуси (от англ. <i>hacker</i> - компьютерный взломщик и <i>space</i> – место для встречи единомышленников со схожими интересами).</p>
@@ -36,7 +53,7 @@
 			<h1>Чем мы занимаемся</h1>
 			<div>
 				<p>По сути, мы объединили вместе коворкинг (помещение с оборудованным рабочим местом) и мастерскую технического творчества, где можно создавать проекты в области электроники, программирования и робототехники. На данный момент в процессе реализации два проекта, один из них в сфере медицинских технологий, второй касается усовершенствования работы вендингового оборудования. Так что кофе-автомат на входе – это не только для отдыха, но и для работы. У вас есть возможность присоединиться к этим проектам или прийти со своей идеей и командой, получив оборудование и площадку для создания прототипа. Если есть только идея – это тоже не проблема. На базе «Пикселя» мы хотим создать дружное и мощное сообщество, где можно будет найти единомышленников и создать команду с нуля.</p>
-				<div class="image"><img id="myimg" src="pic/1.jpg"></div>
+				<div class="image"><img src="pic/1.jpg"></div>
 			</div>
 		</section>
 		<section id="tools">
@@ -69,7 +86,7 @@
 	</main>
 	<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
 	<script src="https://yastatic.net/share2/share.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
 	<script src="index.js"></script>	
 </body>
 </html>

@@ -4,12 +4,12 @@
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 }
-ul {
+ul:not([class]) {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 }
-li {
+li:not([class]) {
 	list-style: none;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -63,6 +63,14 @@ header {
 .navbar ul li a:hover {
 	color: #777;
 }
+.para-container {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+}
+.scene {
+	margin: auto;
+}
 section {
 	position: relative;
 	display: -webkit-box;
@@ -99,12 +107,12 @@ section > div {
 	min-width: 25%;
 	margin-bottom: 20px;
 }
-section img {
+section img:not([class]) {
 	width: calc(100% - 20px);
 	border-radius: 5px;
 	margin: 0 10px;
 }
-section img:hover {
+section img:not([class]):hover {
 	opacity: .7;
 	cursor: pointer;
 }
@@ -166,5 +174,8 @@ section img:hover {
 	section img {
 	width: 60%;
 	margin-left: 0;
+	}
+	.para-container {
+		display: none;
 	}
 }
